@@ -1,1 +1,50 @@
+import bpy
+
+# Clear existing scene
+bpy.ops.wm.read_factory_settings(use_empty=True)
+
+# Add gun object
+bpy.ops.mesh.primitive_cube_add(location=(0, 0, 0))
+gun = bpy.context.object
+gun.name = "Gun"
+
+# Add servo motors (empty objects)
+bpy.ops.object.empty_add(location=(-2, 0, 0))  # Servo motor 1
+servo1 = bpy.context.object
+servo1.name = "ServoMotor1"
+
+bpy.ops.object.empty_add(location=(2, 0, 0))   # Servo motor 2
+servo2 = bpy.context.object
+servo2.name = "ServoMotor2"
+
+# Parent gun to servo motors
+gun.parent = servo1
+gun.parent_type = 'OBJECT'
+gun.parent_inverse = servo1.matrix_world.inverted()
+
+# Set up animation
+frame_start = 1
+frame_end = 100
+
+# Animate servo 1
+servo1.rotation_euler = (0, 0, 0)
+servo1.keyframe_insert(data_path="rotation_euler", index=2, frame=frame_start)
+servo1.rotation_euler = (0, 0, 1.57)  # 90 degrees in radians
+servo1.keyframe_insert(data_path="rotation_euler", index=2, frame=frame_end)
+
+# Animate servo 2
+servo2.rotation_euler = (0, 0, 0)
+servo2.keyframe_insert(data_path="rotation_euler", index=2, frame=frame_start)
+servo2.rotation_euler = (0, 0, -1.57)  # -90 degrees in radians
+servo2.keyframe_insert(data_path="rotation_euler", index=2, frame=frame_end)
+
+# Set up scene
+scene = bpy.context.scene
+scene.frame_start = frame_start
+scene.frame_end = frame_end
+scene.render.fps = 24
+scene.render.image_settings.file_format = 'PNG'
+
+# Render animation
+bpy.ops.render.render(animation=True, write_still=True)
 
