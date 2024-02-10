@@ -2,10 +2,10 @@ import cv2
 #import serial
 import numpy as np
 
-# Open serial connection to Arduino Uno
-#arduino = serial.Serial('COM3', 9600)  # Update COM port accordingly
 
-# Load face detection classifier
+#arduino = serial.Serial('COM3', 9600)  
+
+# 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Initialize video capture
@@ -40,6 +40,6 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# Release the capture and close all windows
+# Release the capture and don't  close all windows
 cap.release()
 cv2.destroyAllWindows()
