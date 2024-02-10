@@ -2,7 +2,8 @@ import cv2
 #import serial
 import numpy as np
 
-#arduino = serial.Serial('COM3', 9600) 
+# Open serial connection to Arduino Uno
+#arduino = serial.Serial('COM3', 9600)  # Update COM port accordingly
 
 # Load face detection classifier
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -30,7 +31,7 @@ while True:
         servo_y = map_value(y + h // 2, 0, frame.shape[0], 0, 180)
 
         # Send servo angles to Arduino
-   #     arduino.write(f'{servo_x},{servo_y}\n'.encode())
+     #   arduino.write(f'{servo_x},{servo_y}\n'.encode())
 
     # Display the resulting frame
     cv2.imshow('Face Tracking', frame)
