@@ -1,3 +1,4 @@
+# THis isn't the main program and isn't the main python file 
 import cv2
 #import serial
 import numpy as np
