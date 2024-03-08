@@ -1,5 +1,5 @@
- import tkinter as tk
-from tkinter import filedialog
+import tkinter as tk
+from tkinter import filedialog, ttk
 from PIL import Image, ImageTk
 from threading import Thread
 from face_detect import detect_faces  # Assuming the face detection code is saved in a file named face_detect.py
@@ -8,15 +8,26 @@ class KiwiModel:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Kiwi Model")
-        
-        self.label = tk.Label(self.root, text="Select a reference image:")
-        self.label.pack()
 
-        self.image_label = tk.Label(self.root)
+        # Style configuration
+        style = ttk.Style()
+        style.theme_use('clam')  # Change the theme to 'clam' for a modern look
+
+        # Frame for holding widgets
+        self.frame = ttk.Frame(self.root, padding="20")
+        self.frame.pack()
+
+        # Label for instructions
+        self.label = ttk.Label(self.frame, text="Select a reference image:", font=('Arial', 14))
+        self.label.pack(pady=10)
+
+        # Button for selecting an image
+        self.select_button = ttk.Button(self.frame, text="Select Image", command=self.select_image)
+        self.select_button.pack(pady=10)
+
+        # Label for displaying the selected image
+        self.image_label = ttk.Label(self.frame)
         self.image_label.pack()
-
-        self.select_button = tk.Button(self.root, text="Select Image", command=self.select_image)
-        self.select_button.pack()
 
         self.root.mainloop()
 
