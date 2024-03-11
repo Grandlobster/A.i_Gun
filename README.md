@@ -19,6 +19,5 @@ Proper Tutorial:
 
 YouTube Tutorial:
 - [Prototype Laser Tutorial](https://www.youtube.com/watch?v=S3CwzkT6cK4&list=PLmgqenIvdj9f1G5O61tmc9nJBtftFG95f&index=5&t=39s)
-Youtube Tutorial:
 - [External Power Supply](https://www.youtube.com/watch?v=xHXVufb5AkQ)
 - [LASER TURRENT](https://github.com/tomash1234/auto-targeting-turret)
