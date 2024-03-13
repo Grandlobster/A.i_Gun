@@ -22,3 +22,6 @@ YouTube Tutorial:
 - [External Power Supply](https://www.youtube.com/watch?v=xHXVufb5AkQ)
 - [LASER TURRENT](https://github.com/tomash1234/auto-targeting-turret)
 - [HEADSHOT TRACKER](https://github.com/rizkydermawan1992/Face-Detection/tree/main)
+##CIRCUIT WITH COMPONENTS : # aadesh
+![circuit](https://github.com/Grandlobster/A.i_Gun/assets/118823460/afff3a97-89cc-40bf-aa33-9fc057ea5522)
+
