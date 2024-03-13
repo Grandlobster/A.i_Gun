@@ -8,7 +8,7 @@
 ## Training Module on the cloud would be much easier. Here's the data. I couldn't train it, so give it a try:
 - [Colab Notebook](https://colab.research.google.com/github/deepme987/Tensorflow-Object-Detection/blob/master/Object_Detection_Face_Mask_Detection.ipynb#scrollTo=V8V1RRQBN6kv)
 
-## Here's the workflow. I'll update it with our synopsis:
+## Here's the workflow.
 - [Workflow PDF](https://github.com/Grandlobster/A.i_Gun/files/14457968/plan-1.1.pdf)
 
 ## SERVO MOTOR
@@ -22,6 +22,6 @@ YouTube Tutorial:
 - [External Power Supply](https://www.youtube.com/watch?v=xHXVufb5AkQ)
 - [LASER TURRENT](https://github.com/tomash1234/auto-targeting-turret)
 - [HEADSHOT TRACKER](https://github.com/rizkydermawan1992/Face-Detection/tree/main)
-##CIRCUIT WITH COMPONENTS : # aadesh
+## CIRCUIT WITH COMPONENTS : # aadesh
 ![circuit](https://github.com/Grandlobster/A.i_Gun/assets/118823460/afff3a97-89cc-40bf-aa33-9fc057ea5522)
 
