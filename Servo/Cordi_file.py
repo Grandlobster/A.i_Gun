@@ -42,3 +42,17 @@ def update_servo_positions():
     port.write(bytes([servo_pan_position]))
 else:
   # DO nothing 
+''' import servo 
+#import pymata
+# ^ lib for arduino coordination
+width=640
+#height and width according to the resolutio size
+ServoPos=[0.1]
+Servo_X=90
+Servo_Y=90
+# the code from laptop paste below 
+#Arduino port 
+# Code for Face coordinates using Harrcascade 
+Servo_X.write()
+Servo_y.write()
+'''
