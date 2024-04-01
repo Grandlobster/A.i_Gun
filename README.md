@@ -1,5 +1,7 @@
 # A.I GUN
-
+## TRAINED FACE MASK MODEL :
+- Dataset:[link](https://www.kaggle.com/datasets/omkargurav/face-mask-dataset)
+- training model code avaliable in my drive
 ## Here are all the reference links for training the face mask module:
 - YouTube tutorial: [Face Mask Detection](https://www.youtube.com/watch?v=IOI0o3Cxv9Q&t=2892s)
 - LabelImg libraries: 
