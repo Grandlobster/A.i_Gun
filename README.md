@@ -5,7 +5,7 @@
 ## Trained model 
   - My own dataset drive link: [Dataset](https://drive.google.com/file/d/1xLWpKyu4luFNvhLEyu_9Q2ovYJj29doy/view?usp=drive_link)
 
-## Training Module on the cloud would be much easier. Here's the data. I couldn't train it, so give it a try:
+## Training Module:
 - [Colab Notebook](https://colab.research.google.com/github/deepme987/Tensorflow-Object-Detection/blob/master/Object_Detection_Face_Mask_Detection.ipynb#scrollTo=V8V1RRQBN6kv)
 
 ## Here's the workflow.
