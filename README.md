@@ -2,7 +2,6 @@
 
 AI GUN is an AI-driven security assistance system designed to automatically detect, classify, and track potential threats using computer vision and machine learning. Traditional surveillance systems depend heavily on human monitoring, which can be slow, inconsistent, and prone to error.
 AI GUN addresses these limitations by offering real-time object detection, automated threat evaluation, and optional hardware-based tracking using servo motors.
-<img width="720" height="1247" alt="image" src="https://github.com/user-attachments/assets/ada5357c-6a9b-4744-ad3c-47298e16606d" />
 
 ---
 
